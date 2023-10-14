@@ -31,7 +31,7 @@ Exemplo de adição de imagem:
 
 Nessa seção deve colocar o link para acessar o dataset no Roboflow
 
-Exemplo de link: [Dataset]([google.com](https://universe.roboflow.com/projetos-egvuo/deteccao_ovos))
+Exemplo de link: [Dataset]([https://universe.roboflow.com/projetos-egvuo/deteccao_ovos])
 
 ## HuggingFace
 

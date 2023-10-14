@@ -1,9 +1,8 @@
 # Projeto Final - Modelos Preditivos Conexionistas
 
-### Nome do aluno
+### Jefferson Igor Duarte Silva
 
-|**Tipo de Projeto**|**Modelo Selecionado**|**Linguagem**|
-|Classificação de Imagens|Em andamento|Tensorflow|
+|**Classificação de Imagens**|**Em andamento**|**Tensorflow**|
 
 
 ## Performance
@@ -31,7 +30,9 @@ Exemplo de adição de imagem:
 
 Nessa seção deve colocar o link para acessar o dataset no Roboflow
 
-Exemplo de link: [Dataset]([https://universe.roboflow.com/projetos-egvuo/deteccao_ovos])
+Link para o [dataset](https://universe.roboflow.com/projetos-egvuo/deteccao_ovos).
+
+Exemplo de link: [Dataset]
 
 ## HuggingFace
 

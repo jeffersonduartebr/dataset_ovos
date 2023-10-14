@@ -3,8 +3,8 @@
 ### Nome do aluno
 
 |**Tipo de Projeto**|**Modelo Selecionado**|**Linguagem**|
-|--|--|--|
-|Classificação de Imagens<br>ou<br>Deteção de Objetos|ex.: YOLOv5|PyTorch ou Tensorflow|
+|Classificação de Imagens|Em andamento|Tensorflow|
+
 
 ## Performance
 
@@ -31,7 +31,7 @@ Exemplo de adição de imagem:
 
 Nessa seção deve colocar o link para acessar o dataset no Roboflow
 
-Exemplo de link: [Nome do link](google.com)
+Exemplo de link: [Dataset]([google.com](https://universe.roboflow.com/projetos-egvuo/deteccao_ovos))
 
 ## HuggingFace
 

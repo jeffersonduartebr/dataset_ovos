@@ -8,7 +8,9 @@
 ## Performance
 
 O modelo treinado possui performance de **83,13%**.
-O modelo se baseia na rede EfficientNetV2B1, mas treina novamente as últimas 05 camadas do modelo. Obtendo assim um modelo mais direcionado para o problema em questão.
+O modelo se baseia na rede [EfficientNetV2B1](https://keras.io/api/applications/efficientnet_v2/), mas treina novamente as últimas 05 camadas do modelo. Obtendo assim um modelo mais direcionado para o problema em questão.
+
+A opção por esta CNN foi devido a sua (1) maior eficiência computacional; (2) ter sido proposta recentemente, logo, incorpora novas inovações; (3) ser pequena. Assim, pudemos retreiná-la parcialmente em GPUs com 16Gb de VRAM.
 
 ### Output do bloco de treinamento
 
@@ -41,9 +43,7 @@ Epoch 10/10
 
 ### Evidências do treinamento
 
-Nessa seção você deve colocar qualquer evidência do treinamento, como por exemplo gráficos de perda, performance, matriz de confusão etc.
-
-Exemplo de adição de imagem:
+Acurácia e erro do modelo:
 ![Acurácia e erro do modelo](https://github.com/jeffersonduartebr/dataset_ovos/blob/main/assets/train_val_acc_los_EfficientNetV2B1-5l.png)
 
 ## Roboflow

@@ -7,8 +7,8 @@
 
 ## Performance
 
-O modelo treinado possui performance de **84,09%**.
-O modelo se baseia na rede [EfficientNetV2B1](https://keras.io/api/applications/efficientnet_v2/), mas treina novamente as últimas 150 camadas do modelo. Obtendo assim um modelo mais direcionado para o problema em questão.
+O modelo treinado possui performance de **83,13%**.
+O modelo se baseia na rede [EfficientNetV2B1](https://keras.io/api/applications/efficientnet_v2/), mas treina novamente as últimas 5 camadas do modelo. Obtendo assim um modelo mais direcionado para o problema em questão.
 
 A opção por esta CNN foi devido a sua (1) maior eficiência computacional; (2) ter sido proposta recentemente, logo, incorpora novas inovações; (3) ser pequena. Assim, pudemos retreiná-la parcialmente em GPUs com 16Gb de VRAM.
 
@@ -19,32 +19,34 @@ A opção por esta CNN foi devido a sua (1) maior eficiência computacional; (2)
   
   ```
 Epoch 1/10
-26/26 [==============================] - 214s 5s/step - loss: 0.5558 - accuracy: 0.7677 - val_loss: 0.7581 - val_accuracy: 0.7490
+26/26 [==============================] - 211s 5s/step - loss: 0.9392 - accuracy: 0.6122 - val_loss: 0.8656 - val_accuracy: 0.6228
 Epoch 2/10
-26/26 [==============================] - 22s 638ms/step - loss: 0.2046 - accuracy: 0.9282 - val_loss: 0.8612 - val_accuracy: 0.8107
+26/26 [==============================] - 191s 5s/step - loss: 0.5459 - accuracy: 0.7958 - val_loss: 0.6099 - val_accuracy: 0.7682
 Epoch 3/10
-26/26 [==============================] - 22s 636ms/step - loss: 0.1043 - accuracy: 0.9625 - val_loss: 0.6183 - val_accuracy: 0.8313
+26/26 [==============================] - 189s 6s/step - loss: 0.4713 - accuracy: 0.8161 - val_loss: 0.5772 - val_accuracy: 0.7613
 Epoch 4/10
-26/26 [==============================] - 22s 644ms/step - loss: 0.1340 - accuracy: 0.9557 - val_loss: 0.5210 - val_accuracy: 0.8368
+26/26 [==============================] - 189s 5s/step - loss: 0.3542 - accuracy: 0.8770 - val_loss: 0.5743 - val_accuracy: 0.7833
 Epoch 5/10
-26/26 [==============================] - 22s 634ms/step - loss: 0.0898 - accuracy: 0.9691 - val_loss: 0.5595 - val_accuracy: 0.8450
+26/26 [==============================] - 191s 5s/step - loss: 0.3310 - accuracy: 0.8770 - val_loss: 0.5487 - val_accuracy: 0.7805
 Epoch 6/10
-26/26 [==============================] - 22s 635ms/step - loss: 0.1337 - accuracy: 0.9591 - val_loss: 0.4501 - val_accuracy: 0.8711
+26/26 [==============================] - 189s 5s/step - loss: 0.3038 - accuracy: 0.8926 - val_loss: 0.5600 - val_accuracy: 0.7819
 Epoch 7/10
-26/26 [==============================] - 22s 634ms/step - loss: 0.0617 - accuracy: 0.9794 - val_loss: 0.5362 - val_accuracy: 0.8340
+26/26 [==============================] - 196s 6s/step - loss: 0.2133 - accuracy: 0.9254 - val_loss: 0.4853 - val_accuracy: 0.8230
 Epoch 8/10
-26/26 [==============================] - 22s 630ms/step - loss: 0.1319 - accuracy: 0.9550 - val_loss: 0.5478 - val_accuracy: 0.8532
+26/26 [==============================] - 190s 5s/step - loss: 0.2291 - accuracy: 0.9154 - val_loss: 0.5258 - val_accuracy: 0.7874
 Epoch 9/10
-26/26 [==============================] - 22s 654ms/step - loss: 0.0387 - accuracy: 0.9860 - val_loss: 0.6505 - val_accuracy: 0.8409
+26/26 [==============================] - 191s 5s/step - loss: 0.1611 - accuracy: 0.9485 - val_loss: 0.4943 - val_accuracy: 0.8107
+Epoch 10/10
+26/26 [==============================] - 198s 6s/step - loss: 0.1505 - accuracy: 0.9494 - val_loss: 0.4462 - val_accuracy: 0.8313
   ```
 </details>
 
 ### Evidências do treinamento
 
-Acurácia e erro do modelo:
-![Acurácia e erro do modelo](https://github.com/jeffersonduartebr/dataset_ovos/blob/main/assets/train_val_acc_los_EfficientNetV2B1-150l.png)
+Acurácia e erro do modelo EfficientNetV2B1:
+![Acurácia e erro do modelo](https://github.com/jeffersonduartebr/dataset_ovos/blob/main/assets/train_val_acc_los_EfficientNetV2B1-5l.png)
 
-No diretório assets estão os notebooks. Tem dois, foram dois resultados obtidos - 83 e 84% de acurácia. Um retreinou 5 camadas e o outro 150 camadas da EfficientNetV2B1.
+No diretório assets estão os notebooks. Tem dois, foram dois resultados obtidos - 83 e 81% de acurácia. Um retreinou 5 camadas e o outro 150 camadas da EfficientNetV2B1, respectivamente.
 
 
 ## Roboflow
